@@ -8,15 +8,7 @@ export default {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {
-      blue: "#1fb6ff",
-      pink: "#ff49db",
-      orange: "#ff7849",
-      green: "#13ce66",
-      "gray-dark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
-    },
+
     fontFamily: {
       rubik: ["Rubik Glitch Pop", "system-ui"],
       holtwood: ["Holtwood One SC", "serif"],
@@ -26,7 +18,11 @@ export default {
       card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#737468",
+      },
+    },
   },
   plugins: [],
 };

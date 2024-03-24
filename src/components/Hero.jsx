@@ -14,8 +14,10 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="w-full h-screen overflow-hidden relative grid place-items-center"
+      className="top-0 w-full h-screen overflow-hidden relative grid place-items-center"
     >
+      {" "}
+      <div className="absolute z-50 w-full h-full top-0 left-0 bg-gradient-to-b from-[transparent] via-[transparent] to-[#737468e8]"></div>
       <div
         className="absolute inset-0 z-30"
         style={{
@@ -24,7 +26,6 @@ const Hero = () => {
           backgroundSize: "cover",
         }}
       ></div>
-
       <motion.div
         className="absolute inset-0 z-10"
         style={{
@@ -34,7 +35,12 @@ const Hero = () => {
           y: frameY,
         }}
       ></motion.div>
-
+      <motion.h1
+        style={{ y: textY }}
+        className="font-bold text-center text-[white] text-7xl md:text-9xl relative z-10 font-rubik"
+      >
+        FAVOURED ARTS
+      </motion.h1>
       <motion.div
         className="absolute inset-0 z-10"
         style={{
@@ -53,12 +59,6 @@ const Hero = () => {
           y: backgroundY,
         }}
       ></motion.div>
-      <motion.h1
-        style={{ y: textY }}
-        className="font-bold text-center text-[white] text-7xl md:text-9xl relative z-30 font-rubik"
-      >
-        FAVOURED ARTS
-      </motion.h1>
       <motion.div
         className="absolute inset-0 z-10"
         style={{
@@ -68,7 +68,6 @@ const Hero = () => {
           y: frameY,
         }}
       ></motion.div>
-
       <motion.div
         className="absolute inset-0 z-10"
         style={{
@@ -78,7 +77,6 @@ const Hero = () => {
           y: backgroundY,
         }}
       ></motion.div>
-
       <div
         className="absolute inset-0 z-20"
         style={{
@@ -87,7 +85,6 @@ const Hero = () => {
           backgroundSize: "cover",
         }}
       ></div>
-
       <motion.div
         className="absolute inset-0 z-0"
         style={{

@@ -5,19 +5,19 @@
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8;
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-holtwood;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative font-holtwood;
   }
 
   .blue-gradient_text {
-    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-[transparent];
   }
 
   .input {
@@ -33,7 +33,35 @@
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-between items-center  max-w-5xl mx-auto;
+  }
+
+  .header-container {
+    @apply sm:px-16 px-8 py-4 w-full  z-[99] right-0 left-0;
+  }
+
+  .absolute-head {
+    @apply absolute top-0 bg-[transparent];
+  }
+
+  .sticky-head {
+    @apply sticky top-0 bg-[#ffffff];
+  }
+
+  .bg-dark {
+    @apply bg-primary;
+  }
+
+  .bg-light {
+    @apply bg-white;
+  }
+
+  .bg-dark-dot {
+    @apply bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#737468_1px)] bg-[size:20px_20px] top-0 z-[-2];
+  }
+
+  .bg-light-dot {
+    @apply bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#ffffff_1px)] bg-[size:20px_20px] top-0 z-[-2];
   }
 
   .footer {
