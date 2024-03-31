@@ -1,13 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
 import ProfilePic from "../assets/imgs/favprofile.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <main>
       <Hero />
 
-      <section className=" bg-primary text-white font-madimi">
+      <section className=" bg-primary text-white">
         <div className="max-container flex gap-16 flex-col">
           <h1 className="head-text text-center ">About Favoured Art</h1>
           <div className="flex justify-center items-center">
@@ -42,13 +43,16 @@ const Home = () => {
 
       <section
         className="flex items-center justify-center 
-      bg-dark-dot"
+      bg-dark-dot text-white"
       >
-        <div className="max-container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
-          fugit dolorem tempora at est itaque doloribus quisquam vel quis
-          accusantium officia corrupti sequi labore iste sint, repudiandae cum
-          dolorum?
+        <div className="max-container flex justify-between items-center gap-10">
+          <div className="head-text  ">Talk To Me</div>
+          <div className="flex flex-col gap-5">
+            <div>Need help purchasing one of my arts?</div>
+            <Link to="/contact" className="btn">
+              Contact Me
+            </Link>
+          </div>
         </div>
       </section>
     </main>
