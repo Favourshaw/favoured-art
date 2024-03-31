@@ -6,7 +6,7 @@ import LogoW from "../assets/imgs/favred-white.png";
 const Navbar = () => {
   const [color, setColor] = useState(false);
   const changeColor = () => {
-    if (window.scrollY >= 92) {
+    if (window.scrollY >= 30) {
       setColor(true);
     } else {
       setColor(false);

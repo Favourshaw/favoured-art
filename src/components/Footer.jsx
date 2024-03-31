@@ -5,7 +5,7 @@ import Logo from "../assets/imgs/favred.png";
 
 const Footer = () => {
   return (
-    <footer className="max-container">
+    <footer className="max-container relative bottom-0">
       <div className="flex md:justify-between justify-center items-center md:flex-row flex-col gap-7">
         <div>
           <NavLink to="/" className="">
